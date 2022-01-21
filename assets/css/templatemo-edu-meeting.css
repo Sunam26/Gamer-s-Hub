@@ -1896,6 +1896,43 @@ section.meetings-page-next{
   
 }
 
+section.comment {
+  background-image: url(../images/meetings-page-bg.jpg);
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 140px;
+  padding-bottom: 0px;
+}
+
+section.comment h4{
+  text-transform: uppercase;
+}
+
+.comment .ask{
+  margin-left: 300px;
+  margin-right: 300px;
+  background-image: url(../images/service-item-bg.jpg);
+  padding-top: 15px;
+  padding-bottom: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-radius: 15px;
+}
+
+.comment .ask button {
+  color: white;
+  border-color: white;
+}
+
+.comment .cont{
+  padding-left: 311.5px;
+  padding-right: 311.5px;
+}
+
+
+
 .meeting-single-item .thumb .price {
   position: absolute;
   left: 20px;

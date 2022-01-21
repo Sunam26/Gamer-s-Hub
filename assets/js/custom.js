@@ -218,6 +218,31 @@
 	    });
 	}
 
+	function show(){
+	    var name = $(document).getElementsById("name");
+		var name2 = $(document).getElementsById("name2");
+		var age = $(document).getElementsById("age");
+		var email = $(document).getElementsById("email");
+		var pass = $(document).getElementsById("pass");
+		var pass2 = $(document).getElementsById("pass2");
+	    firebase.database().ref('User/' + id).set({
+	       name : name,
+		   last_name : name2,
+		   age : age,
+		   email : email,
+		   password : pass
+		   
+		},  function (error){
+				if (error) {
+					alert("Login Failed");
+				}
+				else{
+					alert("Done!");
+				}
+			}
+	    );
+	}
+
 
 	// Page loading animation
 	$(window).on('load', function() {
